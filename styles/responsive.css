@@ -1,0 +1,165 @@
+@media screen and (max-width: 1000px){
+    p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3 {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 825px){
+    /* menu */
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-burger .line-1 {
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+
+    .toggle-burger .line-2 {
+        opacity: 0;    
+    }
+
+    .toggle-burger .line-3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    /* nav */
+    .logo {
+        display: none;
+    }
+    .nav {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        border-left: 1px solid #f1f1f1;
+        background: #fff;
+        z-index: 9;
+        transform: translateX(100%);    
+        transition: 0.3s ease-in-out;
+    }
+    nav ul {
+        height: 65vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    #skill {
+        padding: 4rem 0;
+    }
+    
+    #certificate {
+        padding: 4rem 0;
+    }
+
+    #projek {
+        padding: 4rem 0;
+    }
+
+    #contact {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2.5rem;
+    }
+
+    .pre-title {
+        font-size: 0.8rem;
+   }
+
+    #content {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .content-right {
+        order: -1;
+    }
+
+    .content-right img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .content-left {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .contact-icons {
+        display: contents;
+    }
+
+    .content-left .pre-title {
+         margin: 0 auto;
+    }
+
+    .name {
+        font-size: 2.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #projek > .wrapper > .projek-card {
+        flex-wrap: wrap;
+    }
+
+    .left-arrow {
+        left: 20px;
+    }
+
+    .right-row {
+        right: 20px;
+    }
+
+    .card-column {
+        position: relative; 
+        justify-content: center; 
+        grid-template-columns: repeat(2, 1fr);  
+        padding-left: 3rem;
+
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 640px){
+    /* titles */
+    .section-title {
+        font-size: 1.3rem;
+    }
+    .pre-title {
+        font-size: 0.7rem;
+    }
+    #projek > .wrapper > .projek-card {
+        flex-wrap: wrap;
+    }
+    .card-column {
+        position: relative; 
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
